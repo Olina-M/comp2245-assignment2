@@ -1,0 +1,101 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; 
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header header"
+        "main main sidebar" 
+        "footer footer footer";
+    height: 100vh;
+}
+
+header {
+    grid-area: header; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #63B3ED;
+    color: #FFFFFF;
+}
+
+header h1 {
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+    grid-area: main;
+    padding: 10px;
+}
+
+main h2 {
+   font-size: 32px;
+   color: #48BB78;
+}
+
+main h2 + p {
+   color: #718096;
+}
+
+p {
+    font-size: 14px;
+}
+
+aside {
+    grid-area: sidebar;
+    padding: 10px;
+}
+
+aside h3.about {
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+aside h3.socials {
+    color: #48BB78;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+aside h3.archives {
+    color: #48BB78;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h3 + ul a {
+    color: #4299E1;
+    text-decoration: none;
+}
+
+#aboutsection {
+   background: #E2E8F0;
+   padding: 10px;
+}
+
+
+h3 {
+    font-size: 12px;
+}
+
+
+footer {
+    grid-area: footer; 
+    text-align: left align;
+    padding: 20px;
+    background-color: #2C5282;
+}
+
+footer p {
+   color: #FFFFFF;
+}
+
+
+
+
+
+
